@@ -3383,3 +3383,2068 @@ Processing by UsersController#show as HTML
   [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
   Rendered users/show.html.erb within layouts/application (11.8ms)
 Completed 200 OK in 119ms (Views: 102.4ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-16 13:54:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (14.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/bill/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/bill/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/bill/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (154.1ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (141.2ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (309.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLibraries (20160816204059)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (34.1ms)[0m  [1mCREATE TABLE "libraries" ("id" serial primary key, "name" character varying, "floor_count" integer, "floor_area" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160816204059"]]
+  [1m[36m (15.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLibraryUsers (20160816204344)
+  [1m[35m (7.1ms)[0m  BEGIN
+  [1m[36m (15.8ms)[0m  [1mCREATE TABLE "library_users" ("id" serial primary key, "user_id" integer, "library_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (2.4ms)[0m  CREATE  INDEX  "index_library_users_on_user_id" ON "library_users"  ("user_id")
+  [1m[36m (2.4ms)[0m  [1mCREATE  INDEX  "index_library_users_on_library_id" ON "library_users"  ("library_id")[0m
+  [1m[35m (14.6ms)[0m  ALTER TABLE "library_users" ADD CONSTRAINT "fk_rails_d5bde2ff89"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36m (4.4ms)[0m  [1mALTER TABLE "library_users" ADD CONSTRAINT "fk_rails_c4be83eb23"
+FOREIGN KEY ("library_id")
+  REFERENCES "libraries" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160816204344"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'libraries'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'library_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-08-16 13:54:44 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (13.8ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 979ms (Views: 948.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-16 13:54:45 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-08-16 13:54:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-16 13:54:45 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 13:54:45 -0700
+
+
+Started GET "/assets/libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 13:54:45 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-16 13:54:45 -0700
+
+
+Started GET "/assets/libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 13:54:45 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 13:54:45 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-16 13:54:45 -0700
+
+
+Started GET "/libraries" for ::1 at 2016-08-16 13:54:51 -0700
+
+ActionController::RoutingError (uninitialized constant LibariesController):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/bill/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/bill/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/bill/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.2ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (206.6ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (138.0ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (267.5ms)
+
+
+Started GET "/login" for ::1 at 2016-08-16 13:54:53 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (9.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries" for ::1 at 2016-08-16 13:55:29 -0700
+Processing by LibrariesController#index as HTML
+  [1m[35mLibrary Load (8.1ms)[0m  SELECT "libraries".* FROM "libraries"
+  Rendered libraries/index.html.erb within layouts/application (12.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 125ms (Views: 70.1ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 13:55:29 -0700
+
+
+Started GET "/assets/libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 13:55:29 -0700
+
+
+Started GET "/assets/libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 13:55:29 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-16 13:55:29 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-08-16 13:55:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-16 13:55:29 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 13:55:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-16 13:55:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-16 13:55:29 -0700
+
+
+Started GET "/libraries" for ::1 at 2016-08-16 13:58:42 -0700
+Processing by LibrariesController#index as HTML
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT "libraries".* FROM "libraries"
+  Rendered libraries/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (5.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 89ms (Views: 74.9ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 13:58:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-16 13:58:43 -0700
+
+
+Started GET "/assets/libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 13:58:43 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-08-16 13:58:43 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-16 13:58:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-16 13:58:43 -0700
+
+
+Started GET "/assets/libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 13:58:43 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 13:58:43 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-16 13:58:43 -0700
+
+
+Started GET "/libraries/new" for ::1 at 2016-08-16 13:58:46 -0700
+Processing by LibrariesController#new as HTML
+  Rendered libraries/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @library do |f| %>
+    2:   <div>
+    3:     <%= f.text_field :name, placeholder: "Name" %>
+    4:   </div>
+  app/views/libraries/new.html.erb:1:in `_app_views_libraries_new_html_erb__1581661531710269716_70105040045860'
+  app/controllers/libraries_controller.rb:9:in `new'
+
+
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.9ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (211.6ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (100.6ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/bill/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (275.6ms)
+
+
+Started GET "/libraries/new" for ::1 at 2016-08-16 13:59:01 -0700
+Processing by LibrariesController#new as HTML
+  Rendered libraries/new.html.erb within layouts/application (5.8ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 76ms (Views: 60.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 13:59:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-08-16 13:59:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-16 13:59:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-16 13:59:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-16 13:59:01 -0700
+
+
+Started GET "/assets/libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 13:59:01 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 13:59:01 -0700
+
+
+Started GET "/assets/libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 13:59:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-16 13:59:01 -0700
+
+
+Started POST "/libraries" for ::1 at 2016-08-16 13:59:05 -0700
+Processing by LibrariesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5CoxQOpjgeR9m24pVq27vvq1XSJzvEvwYu1mLNdsE46lK/ya1sB5AUl/LBiUoVryHc6A+wAPDkyGxytKG1lYQ==", "library"=>{"name"=>"1", "floor_count"=>"1", "floor_area"=>"1"}, "commit"=>"Create Library"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "libraries" ("name", "floor_count", "floor_area", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "1"], ["floor_count", 1], ["floor_area", 1], ["created_at", "2016-08-16 20:59:05.519951"], ["updated_at", "2016-08-16 20:59:05.519951"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/libraries
+Completed 302 Found in 13ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/libraries" for ::1 at 2016-08-16 13:59:05 -0700
+Processing by LibrariesController#index as HTML
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT "libraries".* FROM "libraries"
+  Rendered libraries/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/libraries" for ::1 at 2016-08-16 14:00:02 -0700
+Processing by LibrariesController#index as HTML
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT "libraries".* FROM "libraries"
+  Rendered libraries/index.html.erb within layouts/application (15.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 14:00:02 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-08-16 14:00:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-16 14:00:02 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-16 14:00:02 -0700
+
+
+Started GET "/assets/libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 14:00:02 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 14:00:02 -0700
+
+
+Started GET "/assets/libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 14:00:02 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-16 14:00:02 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-16 14:00:02 -0700
+
+
+Started GET "/libraries" for ::1 at 2016-08-16 14:00:08 -0700
+Processing by LibrariesController#index as HTML
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT "libraries".* FROM "libraries"
+  Rendered libraries/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 14:00:09 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-08-16 14:00:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-16 14:00:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-16 14:00:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-16 14:00:09 -0700
+
+
+Started GET "/assets/libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 14:00:09 -0700
+
+
+Started GET "/assets/libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 14:00:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 14:00:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-16 14:00:09 -0700
+
+
+Started GET "/libraries" for ::1 at 2016-08-16 14:00:14 -0700
+Processing by LibrariesController#index as HTML
+  [1m[35mLibrary Load (1.1ms)[0m  SELECT "libraries".* FROM "libraries"
+  Rendered libraries/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-08-16 14:00:14 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 14:00:14 -0700
+
+
+Started GET "/assets/libraries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-16 14:00:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-16 14:00:14 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-16 14:00:14 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-16 14:00:14 -0700
+
+
+Started GET "/assets/libraries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 14:00:14 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-16 14:00:14 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-16 14:00:14 -0700
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:29 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:29 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.4ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:29 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:29 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (1.0ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:29 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.5ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.4ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.7ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/2" for ::1 at 2016-08-16 14:02:30 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/libraries/2
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (1.0ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (1.1ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.5ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:33 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.8ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (1.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.8ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 14ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.5ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:02:39 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.9ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (1.7ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:09 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (1.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:10 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:10 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.5ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:10 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (2.4ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 5ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:10 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.6ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:10 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.4ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:10 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:10 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:10 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 14ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:40 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:41 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:41 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:41 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:41 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.7ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:41 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/" for ::1 at 2016-08-16 14:03:45 -0700
+Processing by LibrariesController#index as HTML
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT "libraries".* FROM "libraries"
+  Rendered libraries/index.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 61ms (Views: 58.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 13ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.5ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (2.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 4ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.4ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.2ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:53 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.9ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.4ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.7ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:03:59 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:04:00 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:04:00 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:04:00 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:04:00 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:04:00 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:04:00 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:04:00 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLibrary Load (0.3ms)[0m  [1mSELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:04:00 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.3ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/libraries/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/libraries/" for ::1 at 2016-08-16 14:04:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LibrariesController#index as HTML
+  [1m[35mLibrary Load (0.9ms)[0m  SELECT "libraries".* FROM "libraries"
+  Rendered libraries/index.html.erb within layouts/application (18.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 811ms (Views: 769.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:04:54 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.5ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered libraries/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/libraries/new" for ::1 at 2016-08-16 14:05:07 -0700
+Processing by LibrariesController#new as HTML
+  Rendered libraries/new.html.erb within layouts/application (70.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 142ms (Views: 140.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/libraries" for ::1 at 2016-08-16 14:05:09 -0700
+Processing by LibrariesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gu7b1THawEpSaHsolqd0rWuUqGIGiRb1eB6cSDhm7g736tziWShPqca76iBRr0coWAlHFWNH2+OLjjV9o1Y7IQ==", "library"=>{"name"=>"2", "floor_count"=>"2", "floor_area"=>"2"}, "commit"=>"Create Library"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "libraries" ("name", "floor_count", "floor_area", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "2"], ["floor_count", 2], ["floor_area", 2], ["created_at", "2016-08-16 21:05:09.899504"], ["updated_at", "2016-08-16 21:05:09.899504"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/libraries
+Completed 302 Found in 11ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/libraries" for ::1 at 2016-08-16 14:05:09 -0700
+Processing by LibrariesController#index as HTML
+  [1m[35mLibrary Load (5.3ms)[0m  SELECT "libraries".* FROM "libraries"
+  Rendered libraries/index.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 52ms (Views: 45.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/libraries/1" for ::1 at 2016-08-16 14:05:12 -0700
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLibrary Load (0.4ms)[0m  SELECT  "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered libraries/show.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 52ms (Views: 48.9ms | ActiveRecord: 0.9ms)
