@@ -2,4 +2,6 @@
 <div>
   Welcome, <%= @user.email %>
   You created your account on <%=@user.created_at.strftime("%B #{@user.created_at.day.ordinalize}, %Y") %>
+  <br>
+  <%= button_to "See Your Library Memberships", user_libraries_path(@user), method: :get %>
 </div>

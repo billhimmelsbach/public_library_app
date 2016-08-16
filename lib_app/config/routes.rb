@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get "/users/new", to: "users#new", as: "new_user"
   post "/users", to: "users#create"
   get "/users/:id", to: "users#show", as: "user"
-  get "/login", to: "sessions#new"
+  get "/login", to: "sessions#new", as: "new_session"
   get "/logout", to: "sessions#destroy"
   get "/users/secret", to: "users#show", as: "secret"
   post "/sessions", to: "sessions#create"
@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   get "/libraries/:id/edit", to: "libraries#edit", as: "edit_library"
   patch "/libraries/:id", to: "libraries#update"
   delete "/libraries/:id", to: "libraries#destroy"
+  get "/users/:user_id/libraries", to: "library_users#index", as: "user_libraries"
+  post "/libraries/:library_id/users", to: "library_users#create", as: "library_users"
 end

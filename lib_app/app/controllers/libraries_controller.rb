@@ -1,6 +1,8 @@
 class LibrariesController < ApplicationController
   def index
     @libraries = Library.all
+    # @user = User.find(params[:user_id])
+    # @user_libraries = @user.libraries
     render :index
   end
 

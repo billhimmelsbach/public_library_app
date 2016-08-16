@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+
+  # before_action :logged_in?, only: [:new, :create, :destroy]
+
   def new
     @user = User.new
     render :new
@@ -12,7 +15,7 @@ class SessionsController < ApplicationController
       redirect_to @user
     else
       flash[:notice] = "Incorrect email or password."
-      redirect_to login_path
+      redirect_to new_session_path
     end
   end
 
