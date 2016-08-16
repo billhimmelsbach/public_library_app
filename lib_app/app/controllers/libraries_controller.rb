@@ -11,12 +11,28 @@ class LibrariesController < ApplicationController
 
   def create
     @library = Library.create(library_params)
-    redirect_to libraries_path
+    redirect_to library_path(@library)
   end
 
   def show
     p @library
     @library = Library.find_by_id(params[:id])
+  end
+
+  def edit
+    @library = Library.find_by_id(params[:id])
+  end
+
+  def update
+    @library = Library.find_by_id(params[:id])
+    @library.update(library_params)
+    redirect_to library_path(@library)
+  end
+
+  def destroy
+    library = Library.find_by_id(params[:id])
+    library.destroy
+    redirect_to libraries_path
   end
 
 

@@ -1,0 +1,14 @@
+<%= form_for @library do |f| %>
+  <div>
+    <%= f.text_field :name, placeholder: "Name" %>
+  </div>
+  <div>
+    <%= f.number_field :floor_count, placeholder: "Floor Count" %>
+  </div>
+  <div>
+    <%= f.number_field :floor_area, placeholder: "Floor Area" %>
+  </div>
+  <%= f.submit "Test"%>
+<% end %>
+
+<%= link_to "Delete", library_path(@library), method: :delete %>
