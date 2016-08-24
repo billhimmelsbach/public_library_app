@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/billhimmelsbach/four-oh-four.git
-  revision: 9e444a2219260ab3bb66fb1f76f4c68ce70db5f7
+  revision: 14da7bcf402a10b006c62278d57d2e709b1583bf
   specs:
     fourohfour (0.0.1)
       rails (~> 4.2.6)
